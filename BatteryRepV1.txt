@@ -1,0 +1,9 @@
+DEFAULT_DELAY 1000
+DEFAULT_STRING_DELAY 10
+
+
+STRINGLN powercfg /batteryreport
+DELAY 5000
+GUI
+STRING C:\Windows\System32\battery-report.html
+ENTER

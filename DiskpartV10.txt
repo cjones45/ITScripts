@@ -1,0 +1,17 @@
+DEFAULT_DELAY 1000
+DEFAULT_STRING_DELAY 50
+
+F8
+STRINGLN diskpart
+DELAY 12000
+STRINGLN list disk
+STRINGLN select disk 0
+STRINGLN clean
+STRINGLN create partition primary
+STRINGLN select partition 1
+STRINGLN active
+STRINGLN format fs=ntfs quick
+DELAY 4000
+STRINGLN assign
+STRINGLN exit
+STRINGLN exit
